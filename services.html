@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Szolgáltatások</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background-color: #f8f9fa;
+      }
+
+      .section-title {
+        font-weight: 600;
+      }
+
+      .card {
+        border: none;
+        border-radius: 12px;
+        transition: all 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+      }
+
+      .shadow-soft {
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      }
+
+      .flag {
+        font-size: 1.8rem;
+      }
+
+      .flag-img {
+        width: 48px;
+        height: 32px;
+        object-fit: cover;
+        border-radius: 6px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      }
+      .flag-img {
+        transition: transform 0.3s ease;
+      }
+
+      .card:hover .flag-img {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">SigmaLigma</a>
+
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Főoldal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="services.html">Szolgáltatások</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Rólunk</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Kapcsolat</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HEADER -->
+    <div class="container py-5 text-center">
+      <h1 class="section-title">Szolgáltatásaink</h1>
+      <p class="text-muted">Válaszd ki a számodra megfelelő képzést</p>
+    </div>
+
+    <!-- CARDS -->
+    <div class="container pb-5">
+      <div class="row g-4">
+        <!-- ANGOL -->
+        <div class="col-md-4">
+          <a href="#" class="text-decoration-none text-dark">
+            <div class="card shadow-soft h-100 p-3 text-center">
+              <img
+                src="https://flagcdn.com/w80/gb.png"
+                class="flag-img mx-auto"
+              />
+              <h4 class="mt-3">Angol nyelv</h4>
+              <p class="text-muted">
+                Kezdőtől haladó szintig, üzleti és általános kurzusok.
+              </p>
+              <small class="text-primary">Tovább →</small>
+            </div>
+          </a>
+        </div>
+
+        <!-- NÉMET -->
+        <div class="col-md-4">
+          <a href="#" class="text-decoration-none text-dark">
+            <div class="card shadow-soft h-100 p-3 text-center">
+              <img
+                src="https://flagcdn.com/w80/de.png"
+                class="flag-img mx-auto"
+              />
+              <h4 class="mt-3">Német nyelv</h4>
+              <p class="text-muted">
+                Vizsgafelkészítés és szakmai nyelvi képzés.
+              </p>
+              <small class="text-primary">Tovább →</small>
+            </div>
+          </a>
+        </div>
+
+        <!-- SPANYOL -->
+        <div class="col-md-4">
+          <a href="#" class="text-decoration-none text-dark">
+            <div class="card shadow-soft h-100 p-3 text-center">
+              <img
+                src="https://flagcdn.com/w80/es.png"
+                class="flag-img mx-auto"
+              />
+              <h4 class="mt-3">Spanyol nyelv</h4>
+              <p class="text-muted">
+                Kommunikáció-központú oktatás modern módszerekkel.
+              </p>
+              <small class="text-primary">Tovább →</small>
+            </div>
+          </a>
+        </div>
+
+        <!-- VÁLLALATI -->
+        <div class="col-md-4">
+          <a href="#" class="text-decoration-none text-dark">
+            <div class="card shadow-soft h-100 p-3 text-center">
+              <i class="bi bi-building fs-2 text-primary"></i>
+              <h4 class="mt-2">Vállalati képzések</h4>
+              <p class="text-muted">
+                Cégek számára testreszabott nyelvi programok.
+              </p>
+              <small class="text-primary">Tovább →</small>
+            </div>
+          </a>
+        </div>
+
+        <!-- ONLINE -->
+        <div class="col-md-4">
+          <a href="#" class="text-decoration-none text-dark">
+            <div class="card shadow-soft h-100 p-3 text-center">
+              <i class="bi bi-laptop fs-2 text-primary"></i>
+              <h4 class="mt-2">Online oktatás</h4>
+              <p class="text-muted">
+                Rugalmas tanulás bárhonnan, modern platformokon.
+              </p>
+              <small class="text-primary">Tovább →</small>
+            </div>
+          </a>
+        </div>
+
+        <!-- VIZSGA -->
+        <div class="col-md-4">
+          <a href="#" class="text-decoration-none text-dark">
+            <div class="card shadow-soft h-100 p-3 text-center">
+              <i class="bi bi-award fs-2 text-primary"></i>
+              <h4 class="mt-2">Vizsgafelkészítés</h4>
+              <p class="text-muted">
+                Nyelvvizsgára és érettségire való felkészítés.
+              </p>
+              <small class="text-primary">Tovább →</small>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center p-3">
+      © 2026 SigmaLigma Nyelviskola
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

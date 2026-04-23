@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>SigmaLigma Nyelviskola</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #0d6efd, #0a58ca);
+        }
+
+        .section-title {
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            border: none;
+            border-radius: 12px;
+        }
+
+        .shadow-soft {
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">SigmaLigma</a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Főoldal</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Szolgáltatások</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">Rólunk</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Kapcsolat</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero text-white text-center py-5">
+    <div class="container">
+        <h1 class="display-5 fw-bold">SigmaLigma Nyelviskola</h1>
+        <p class="lead">Modern nyelvoktatás és integrált informatikai rendszer</p>
+        <a href="services.html" class="btn btn-light mt-3">Szolgáltatásaink</a>
+    </div>
+</header>
+
+<!-- ABOUT -->
+<div class="container py-5">
+    <h2 class="section-title text-center">Bemutatkozás</h2>
+    <p class="text-center mx-auto" style="max-width: 700px;">
+        A SigmaLigma Nyelviskola egy budapesti intézmény, amely angol, német és spanyol képzéseket kínál.
+        A működésünket egy saját szerveren futó modern informatikai rendszer támogatja.
+    </p>
+</div>
+
+<!-- NEWS + REVIEWS -->
+<div class="container pb-5">
+    <div class="row g-4">
+
+        <!-- NEWS -->
+        <div class="col-md-6">
+            <h2 class="section-title">Hírek</h2>
+
+            <div class="card shadow-soft p-3 mb-3">
+                <h5><i class="bi bi-megaphone"></i> Új tanfolyamok indulnak</h5>
+                <p class="mb-0">Szeptembertől új angol és német csoportok.</p>
+            </div>
+
+            <div class="card shadow-soft p-3 mb-3">
+                <h5><i class="bi bi-laptop"></i> Online oktatás bővítése</h5>
+                <p class="mb-0">Most már minden kurzus elérhető online is.</p>
+            </div>
+
+            <div class="card shadow-soft p-3">
+                <h5><i class="bi bi-server"></i> Új rendszer bevezetése</h5>
+                <p class="mb-0">Saját szerveres kommunikációs platform indul.</p>
+            </div>
+        </div>
+
+        <!-- REVIEWS -->
+        <div class="col-md-6 text-center">
+            <h2 class="section-title">Vélemények</h2>
+
+            <div id="reviewCarousel" class="carousel slide mx-auto" style="max-width: 420px;" data-bs-ride="carousel" data-bs-interval="3000">
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="card shadow-soft p-4">
+                            <div class="text-warning mb-2">★★★★★</div>
+                            <p>"Nagyon jó tanárok és rugalmas órák!"</p>
+                            <small class="text-muted">– Anna</small>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="card shadow-soft p-4">
+                            <div class="text-warning mb-2">★★★★★</div>
+                            <p>"Gyors fejlődést értem el angolból."</p>
+                            <small class="text-muted">– Péter</small>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="card shadow-soft p-4">
+                            <div class="text-warning mb-2">★★★★☆</div>
+                            <p>"Az online rendszer nagyon kényelmes."</p>
+                            <small class="text-muted">– Júlia</small>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark rounded"></span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-dark rounded"></span>
+                </button>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- WHY US -->
+<div class="container pb-5">
+    <h2 class="section-title text-center">Miért minket válassz?</h2>
+
+    <div class="row text-center g-4 mt-3">
+        <div class="col-md-3">
+            <i class="bi bi-person-check fs-1 text-primary"></i>
+            <p class="mt-2">Tapasztalt tanárok</p>
+        </div>
+        <div class="col-md-3">
+            <i class="bi bi-cpu fs-1 text-primary"></i>
+            <p class="mt-2">Modern infrastruktúra</p>
+        </div>
+        <div class="col-md-3">
+            <i class="bi bi-clock fs-1 text-primary"></i>
+            <p class="mt-2">Rugalmas tanulás</p>
+        </div>
+        <div class="col-md-3">
+            <i class="bi bi-shield-check fs-1 text-primary"></i>
+            <p class="mt-2">Biztonságos rendszer</p>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center p-3">
+    © 2026 SigmaLigma Nyelviskola
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

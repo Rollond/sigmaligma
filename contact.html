@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Kapcsolat</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        body { background-color: #f8f9fa; }
+
+        .section-title { font-weight: 600; }
+
+        .card {
+            border: none;
+            border-radius: 12px;
+        }
+
+        .shadow-soft {
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">SigmaLigma</a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Főoldal</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Szolgáltatások</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">Rólunk</a></li>
+                <li class="nav-item"><a class="nav-link active" href="contact.html">Kapcsolat</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HEADER -->
+<div class="container py-5 text-center">
+    <h1 class="section-title">Kapcsolat</h1>
+    <p class="text-muted">Lépj kapcsolatba velünk</p>
+</div>
+
+<div class="container pb-5">
+    <div class="row g-4">
+
+        <!-- CONTACT INFO -->
+        <div class="col-md-5">
+            <div class="card shadow-soft p-4 h-100">
+                <h4>Elérhetőségek</h4>
+
+                <p><i class="bi bi-geo-alt text-primary"></i> Budapest</p>
+                <p><i class="bi bi-envelope text-primary"></i> info@sigmaligma.hu</p>
+                <p><i class="bi bi-telephone text-primary"></i> +36 30 123 4567</p>
+
+                <hr>
+
+                <p class="text-muted">Hétfő – Péntek: 9:00 – 18:00</p>
+                <!-- MAP -->
+<div class="container pb-5">
+    <div class="card shadow-soft p-2">
+        <iframe 
+            src="https://www.google.com/maps?q=Budapest&output=embed"
+            width="100%" 
+            height="350" 
+            style="border:0; border-radius:12px;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </div>
+</div>
+            </div>
+        </div>
+
+        <!-- FORM -->
+        <div class="col-md-7">
+            <div class="card shadow-soft p-4">
+                <h4>Üzenet küldése</h4>
+
+                <form>
+                    <input class="form-control mb-3" placeholder="Név">
+                    <input class="form-control mb-3" placeholder="Email">
+                    <textarea class="form-control mb-3" rows="4" placeholder="Üzenet"></textarea>
+
+                    <button class="btn btn-primary w-100">
+                        Küldés
+                    </button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer class="bg-dark text-white text-center p-3">
+    © 2026 SigmaLigma Nyelviskola
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
